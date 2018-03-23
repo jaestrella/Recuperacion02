@@ -8,7 +8,17 @@
     android:background="#f00"
     tools:context="com.iesvirgendelcarmen.dam.recuperacion02.MainActivity">
 
-
-
+    <Button
+        android:id="@+id/lanzarActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR A LA ACTIVITY"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/lanzarFragmento3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR A FRAGMENTO 3"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

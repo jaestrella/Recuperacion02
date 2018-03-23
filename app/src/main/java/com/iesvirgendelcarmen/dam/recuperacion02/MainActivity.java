@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Actividad2.onClick {
     Button boton,boton2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +43,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+    }
+
+    public void cambiarFragmento1(){
+        Actividad2 actividad2=new Actividad2();
+        FragmentManager fm=getSupportFragmentManager();
+        FragmentTransaction ft=fm.beginTransaction();
+        ft.add(R.id.contenedor,actividad2);
+        ft.commit();
+    }
+
+    public void cambiarFragmento2(){
+        Actividad3 actividad3=new Actividad3();
+        FragmentManager fm=getSupportFragmentManager();
+        FragmentTransaction ft=fm.beginTransaction();
+        ft.add(R.id.contenedor,actividad3);
+        ft.commit();
     }
 }
